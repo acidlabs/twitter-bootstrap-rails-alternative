@@ -1,9 +1,9 @@
 <%%- model_class = <%= resource_name.classify %> -%>
 <div class="row-fluid">
   <div class="span10">
-    <h1>Proyecto <span class="nombre"></span></h1>
+    <h1><%= resource_name.classify %> <span class="nombre"></span></h1>
   </div>
-  <div class="span2 offset10"><a class="btn btn-warning" href="%>_path">
+  <div class="span2 offset10"><a class="btn btn-warning" href="<%%= <%= controller_routing_path %>_path %>">
     <span class="icon-white icon-arrow-left"></span></a>
   </div>
 </div>
@@ -24,4 +24,4 @@
   </div>
 </div>
 
-<div class="boton"><a class="btn btn-danger" href="%>_path(@<%= resource_name %>)"><span class="icon-white icon-pencil"></span> Editar</a></div> 
+<div class="boton"><a class="btn btn-danger" href="<%%= edit_<%= singular_controller_routing_path %>_path(@<%= resource_name %>)%>"><span class="icon-white icon-pencil"></span> Editar</a></div> 
