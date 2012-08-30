@@ -16,6 +16,4 @@
   </tbody>
 </table>
 
-<%%= link_to t('.new', :default => t("helpers.links.new")),
-            new_<%= singular_controller_routing_path %>_path,
-            :class => 'btn btn-primary' %>
+<%%= index_new_action(new_<%= singular_controller_routing_path %>_path) %>
